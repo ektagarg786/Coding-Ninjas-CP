@@ -20,8 +20,6 @@ Sample Output:
 
 #include <iostream>
 #define fast                          
-    ios_base::sync_with_stdio(false); 
-    cin.tie(0);
 #define endl '\n'
 #define int long long int
 #define MAX 1000001
@@ -30,6 +28,8 @@ int phi[MAX];
 unsigned int S[MAX], G[MAX];
 int32_t main()
 {
+   ios_base::sync_with_stdio(false); 
+    cin.tie(0);
     fast unsigned int i, j, n;
     phi[1] = 1;
     for (i = 2; i < MAX; i += 2)
